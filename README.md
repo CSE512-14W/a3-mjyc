@@ -29,13 +29,13 @@ Access our visualization at http://cse512-14w.github.io/a3-jheer-kanitw/ or down
 
 Initially, I wanted to make an application that can dynamically create scatter plots from the wifi data collected from the application-controlled mobile robot.  Below figure shows a design of the main web interface.
 
-![](https://raw.github.com/CSE512-14W/a3-mjyc/master/storyboard/storyboard_map.png =250x)
+![](https://raw.github.com/CSE512-14W/a3-mjyc/master/storyboard/storyboard_map.png)
 
 The mobile robot, a magenta triangle with a pointy peak indicating its front, can be controlled by giving a “goal”, another magenta triangle with an annotation “goal”.  The goal can be created by double clicking a desired position in the map.
 
 The scatter plot is overlaid on top the map to show locations of detected access points.   The color is used to distinguish access points (e.g., green, orange, blue indicating three access points in figure above) and the size is used to indicate to its signal strength.  To avoid clutterred scatter plot, circles can be displayed around the estimated robot position (as shown in figure below--three circles around the magenta triangle).  In addition transparency can be used to further improve visual clarity.  The created circles stay visible for certain interval (input parameter).  In addition, hovering over one of the circle can make other circles with different colors very transparent as shown below.
 
-![](https://raw.github.com/CSE512-14W/a3-mjyc/master/storyboard/storyboard_zoomed.png =250x) This figure is the zoomed version of the figure above.
+![](https://raw.github.com/CSE512-14W/a3-mjyc/master/storyboard/storyboard_zoomed.png) This figure is the zoomed version of the figure above.
 
 ### Changes between Storyboard and the Final Implementation
 
