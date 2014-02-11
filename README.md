@@ -6,6 +6,7 @@ a3-mjyc
 1. Michael Jae-Yoon Chung mjyc@uw.edu
 
 ## Wifi4bot
+![](http://homes.cs.washington.edu/~mjyc/shared/cse512-a3/wifi4bot.png)
 
 ### Description
 
@@ -15,15 +16,11 @@ Signal strength measurements from Wifi access points around the building are use
 
 My data domain is the real-time stream of Wifi data collected from a mobile robot.  Specifically, the Wifi data is collected at 0.1Hz and has following three sub-fields; 1) *timestamps* of measurements in precision of nanoseconds, 2) estimated mobile robot's *2D positions*, e.g. (x,y), in the “map” frame (in meter) 3) lists of *access points data* containing MAC addresses and associating signal strengths (in dBm).
 
-<!--## Running Instructions
+## Running Instructions
 
-Put your running instructions here.  (Tell us how to open your visualization.)
+You can check recorded result ![here](http://homes.cs.washington.edu/~mjyc/shared/cse512-a3/result.mpg)
 
-If your visualization is web-based,  it would be great if your submissions can be opened online. [Github Pages](http://pages.github.com/) is a good and easy way to put your visualization online so you can put your link here.  For example:
-
-Access our visualization at http://cse512-14w.github.io/a3-jheer-kanitw/ or download this repository and run `python -m SimpleHTTPServer 9000` and access this from http://localhost:9000/.
-
-(If you put your work online, please also write [one-line description and put a link to your final work](http://note.io/1n3u46s) so people can access it directly from CSE512-14W page.)-->
+You can also see live demo at ![here](http://chester:8000/occupancygrid.html).  However, this will not always be available, you have to contact me to get the robot side programs ready.
 
 ## Story Board
 
@@ -44,10 +41,6 @@ The final implementation changed dramatically from the storyboard.  The goal-bas
 
 ## Development Process
 
-All the work was done by me.  There was three major components; 1) wifi data collection from the mobile robot, 2) realtime sensors data visualization and 3) integration of the robot and the web interface.  Each component took at least 10 hours and the integration part definitely took longer time.
+All the work was done by me.  There was three major components; 1) wifi data collection from the mobile robot, 2) real time sensors data visualization and 3) integration of the robot and the web interface.  Each component took at least 8 hours and the integration part definitely took longer time--this excludes storyboard and write up time.
 
-For robotics component, I started from [here](https://github.com/esmaras/bwi).   I extracted part of code I need from the repo integrated into my existing mobile robot navigtion code.  The hardest part was figuring out network setup.
-
-For data visualization component, I started from [here](http://bost.ocks.org/mike/constancy/).  The hardest part was deadling mixing canvas and d3.
-
-For integration component, I started from [here](http://robotwebtools.org/).  The hardest part was dealing with their bleeding edge code.
+For the wifi data collection, I started from [here](https://github.com/esmaras/bwi).  I extracted part of code I needed and integrated them to my existing mobile robot navigation [code](https://github.com/mjyc/deliverbot-catkin-giyeok).  The hardest part was setting up access point scanning program.  For the data visualization, I started from [here](http://bost.ocks.org/mike/constancy/).  The hardest part was adopting the given code to my purpose.  For the integration, I started from [here](http://robotwebtools.org/).  The hardest part was dealing with their bleeding edge-ness code.  Also, this code is based on canvas where D3 uses svg, I spent good amount of time trying to use them both and moved on.  This is the main reason why I could not do scatter plot for this project.

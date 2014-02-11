@@ -4,7 +4,7 @@
 function init() {
   // Connect to ROS
   var ros = new ROSLIB.Ros({
-    url: 'ws://ubuntu:9090'
+    url: 'ws://chester.cs.washington.edu:9090'
   });
 
   // Create the main viewer
@@ -121,8 +121,10 @@ function init() {
 
     if (firstDraw) {
       var curMinMax0 = d3.extent(data, function(d) { return d.signal_strength; });
-      curMinMax0[0] = curMinMax0[0] < xScale.domain()[0] ? (curMinMax0[0] - 1) : xScale.domain()[0];
-      curMinMax0[1] = curMinMax0[1] > xScale.domain()[1] ? (curMinMax0[1] + 0) : xScale.domain()[1];
+      // curMinMax0[0] = curMinMax0[0] < xScale.domain()[0] ? (curMinMax0[0] - 1) : xScale.domain()[0];
+      // curMinMax0[1] = curMinMax0[1] > xScale.domain()[1] ? (curMinMax0[1] + 0) : xScale.domain()[1];
+      curMinMax0[0] = curMinMax0[0];
+      curMinMax0[1] = curMinMax0[1];
       xScale.domain(curMinMax0);
     }
 
