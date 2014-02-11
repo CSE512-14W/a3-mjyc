@@ -18,7 +18,7 @@ My data domain is the real-time stream of Wifi data collected from a mobile robo
 
 ## Running Instructions
 
-You can check the recorded result [here](http://homes.cs.washington.edu/~mjyc/shared/cse512-a3/result.mpg).
+You can check the recorded result [here](http://www.youtube.com/watch?v=FPI375Ixz0U&list=HL1392158807&feature=mh_lolz).
 
 You can also check the live demo [here](http://chester.cs.washington.edu:8000/occupancygrid.html).  However, this link will not always be available--please contact me (mjyc@cs.washington.edu) and schedule a time slot to see live demo.
 
