@@ -6,7 +6,7 @@ a3-mjyc
 1. Michael Jae-Yoon Chung mjyc@uw.edu
 
 ## Wifi4bot
-![](http://homes.cs.washington.edu/~mjyc/shared/cse512-a3/wifi4bot.png) 
+![](http://homes.cs.washington.edu/~mjyc/shared/cse512-a3/wifi4bot1.png)
 
 ### Description
 
